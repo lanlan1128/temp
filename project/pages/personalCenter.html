@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+	<head>
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+		<script src="../lib/lib-flexible-2.0/index.js"></script>
+		
+		<!-- css资源 -->
+		<link rel="stylesheet" href="../lib/weui/1.1.3/style/weui.min.css">
+		<link rel="stylesheet" href="../lib/jquery-weui/1.2.1/css/jquery-weui.min.css">
+	
+		<style> 
+			html{font-size: 75px}
+		</style>
+		<link rel="stylesheet" href="../css/common.css">
+	</head>
+	<body>
+		<div class="page">
+			<div class="page__hd">
+				<div class="p-header-bar">
+					<div class="p-header-info">
+						<img src="../images/signOnList-header-bg.png" alt="" id="photo">
+						<p class="" id="nickName">你是人间四月天</p>
+					</div>
+					
+					<div class="weui-flex p-header-text">
+					  <div class="weui-flex__item p-header-text-item">
+						<p>连续签到：<span id="signDays">2</span>天</p>
+					  </div>
+					  <a class="weui-flex__item p-header-text-item" href="./coinsHistoryPage">
+						<img src="../images/personalCenter-cion-f.png" alt="" class="coin">
+						<p>金币：<span id="myCoins">125</span></p>
+					  </a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="page__bd p-page__bd">
+				<div class="signOn-panel">
+					<p class="title">您已经连续签到2天</p>
+					
+					<!-- http://www.nkxjp.cn/weiyi/app/self/goinSelfCenter?userId=1 根据hasCheckin，前一天和今天要用signed标识已登录 -->
+					<div class="weui-flex singOn-list">
+						<div class="weui-flex__item singOn-list-item signed">
+							<p class="score">+10</p>
+							<span class="coin"></span>
+							<p class="date">10.17</p>
+						</div>
+						<div class="weui-flex__item singOn-list-item" >
+							<p class="score">+10</p>
+							<span class="coin"></span>
+							<p class="date">10.17</p>
+						</div>
+						<div class="weui-flex__item singOn-list-item">
+							<p class="score">+10</p>
+							<span class="coin"></span>
+							<p class="date">10.17</p>
+						</div>
+						<div class="weui-flex__item singOn-list-item">
+							<p class="score">+10</p>
+							<span class="coin"></span>
+							<p class="date">10.17</p>
+						</div>
+						<div class="weui-flex__item singOn-list-item">
+							<p class="score">+10</p>
+							<span class="coin"></span>
+							<p class="date">10.17</p>
+						</div>
+						<div class="weui-flex__item singOn-list-item">
+							<p class="score">+10</p>
+							<span class="coin"></span>
+							<p class="date">10.17</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="signOn-arrow" style=""></div>
+			</div>
+		</div>
+		
+		<!-- 脚本文件 -->
+		<script src="../lib/jquery/1.11.0/jquery.min.js"></script>
+		<script src="../lib/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+		<script src="../lib/fastclick.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+				
+				$('#singOn-list-item .coin:eq(1)').click(function() {  // 第二个金币是当天可签到的按钮
+					var $todayCoin = $(this);
+					if($.trim($todayCoin.parent().find('.date').text()) !== '今天' && $todayCoin.parent().hasClass('signed')) {
+						return;
+					}
+
+					// 调用
+					/*这个用例我不知道是哪个，写了一下成功后的前端处理
+					*/
+					$.ajax({
+						url: '',
+						type: 'post',
+						datatype: 'json',
+						success: function(data) {
+							var checkInfo = data.signDetail;
+							var todayCheckInd = false;
+							$.each(checkInfo, function (index, info) {
+								var infoArr = info.splist('-');
+								var checkInd = infoArr[0];
+								var date = infoArr[1];
+
+								if(date == '今天') {
+									todayCheckInd = checkInd;
+									return false;
+								}
+							});
+
+							if(data.todayCheckInd) {
+								// 修改为已签到的样式
+								$todayCoin.parent().addClass('signed');
+
+								// 修改连续签到天数、金币数的值
+								$('#signDays').html(data.signDays);
+								$('#myCoins').html(data.myCoins);
+							}else {
+								// 签到不成功的提示
+								$.toast("这里写错误提示", "text");
+							}
+						},
+					})
+				});
+			});
+		</script>
+	</body>
+</html>

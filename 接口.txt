@@ -1,0 +1,9 @@
+http://www.nkxjp.cn/weiyi/app/self/goinSelfCenter?userId=1
+
+http://www.nkxjp.cn/weiyi/app/self/checkin?userId=1
+
+http://www.nkxjp.cn/weiyi/app/self/coinsHistory?userId=1
+
+返回的数据可能有点差异, 比如 "12.19-1" 这个是有有异常的,这个后面我会处理
+其他的有什么在再问我
+

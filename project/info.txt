@@ -1,0 +1,22 @@
+一、
+weiui：
+https://weui.io/
+https://github.com/Tencent/weui/wiki
+
+jquerywui(weiui组件扩展)
+http://jqweui.com/
+
+flexible.js（rem适配方案）
+详解：http://caibaojian.com/flexible-js.html
+下载：https://github.com/amfe/lib-flexible
+
+二、
+Mint UI（弃用）
+使用vue的单页面应用，担心经验不够不好开发
+    组件  觉得没有flex rem等texing
+
+
+
+
+
+

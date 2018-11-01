@@ -1,0 +1,24 @@
+weiui：
+https://github.com/Tencent/weui/wiki
+
+
+ weiui -> 搭建静态页面
+ js后续考虑
+   https://weui.io/#badge
+
+Mint UI
+使用vue的单页面应用，担心经验不够不好开发
+ 组件  觉得没有flex rem等texing
+
+
+
+jqueryui
+http://jqweui.com/
+
+基础组件
+http://jqweui.com/components#buttons
+
+扩展组件
+http://jqweui.com/extends#select
+
+   有fastclick,

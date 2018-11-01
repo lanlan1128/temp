@@ -1,0 +1,199 @@
+body {
+  max-width: 10rem;
+  margin: 0 auto;
+  font-size: 0.37333rem !important; }
+
+.page, body {
+  background-color: #f8f8f8; }
+
+.position-center {
+  position: relative; }
+
+.position-center-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* rest weiui*/
+.weui-cells__title {
+  margin-top: 0.38667rem;
+  margin-bottom: 0.37333rem;
+  padding-left: 0.4rem;
+  padding-right: 0.37333rem; }
+
+.weui-cell {
+  padding: 0.4rem; }
+
+/* signOnList page */
+.s-page .page__bd {
+  margin: 0.28rem 0; }
+
+.s-header-bar {
+  background: url(../images/signOnList-header-bg.png) no-repeat center/100% auto;
+  padding-top: 46%; }
+
+.s-header-content {
+  color: #fff;
+  text-align: center; }
+
+.s-header-content span {
+  color: #fff;
+  font-size: 1.12rem; }
+
+.s-header-content p {
+  color: #fff;
+  font-size: 0.37333rem; }
+
+.s-panel-title {
+  color: #000;
+  font-size: 0.37333rem; }
+
+.s-page__bd .weui-media-box {
+  padding: 0; }
+
+.s-page__bd .number {
+  font-size: 0.4rem;
+  color: #0bb7cb; }
+
+.s-page__bd .title {
+  font-size: 0.4rem; }
+
+.s-page__bd .desc {
+  font-size: 0.32rem; }
+
+.s-page__bd .tip {
+  font-size: 0.37333rem;
+  color: #666666;
+  text-align: center;
+  padding: 0.44rem; }
+
+/* personalCenter page */
+.p-header-bar {
+  font-size: 0.37333rem;
+  color: #064e56;
+  vertical-align: middle;
+  text-align: center;
+  background: url(../images/personalCenter-header-bg.png) no-repeat center/auto 100%; }
+
+.p-header-info {
+  padding: 0.69333rem 0 0.72rem; }
+
+.p-header-info img {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.4rem; }
+
+.p-header-bar .coin {
+  display: inline-block;
+  margin-right: 0.28rem;
+  width: 0.72rem;
+  vertical-align: middle; }
+
+.p-header-text {
+  background: #0bb7cb;
+  background: rgba(13, 182, 202, 0.07); }
+
+.p-header-text .p-header-text-item {
+  color: #064e56;
+  padding: 0.34667rem 0 0.36rem; }
+
+.p-header-text .p-header-text-item {
+  position: relative;
+  line-height: 0.72rem; }
+
+.p-header-text .p-header-text-item p,
+.p-header-text .p-header-text-item span {
+  display: inline-block;
+  vertical-align: middle; }
+
+.p-header-text .p-header-text-item:not(:nth-last-child(1)):before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #d9d9d9;
+  width: 1px;
+  border-right: 1px solid #d9d9d9;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5); }
+
+.signOn-panel {
+  margin: 0.56rem 0 0;
+  height: 3.46667rem;
+  background: url(../images/personalCenter-body-bg.png) no-repeat center/100% auto;
+  color: #fff;
+  background-clip: padding; }
+
+.signOn-panel .title {
+  padding: 0.21333rem 0.8rem; }
+
+.singOn-list {
+  position: relative;
+  padding: 0 0.8rem;
+  line-height: 1; }
+
+.singOn-list:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0.25;
+  border: 2px solid #ffffff;
+  height: 1px;
+  top: 50%;
+  z-index: 1;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: scaleY(0.3);
+  transform: scaleY(0.3);
+  margin-top: -1.5px; }
+
+.signOn-pnel .item:nth-child(2) {
+  padding: 20px;
+  display: block;
+  margin: 20rem auto; }
+
+.singOn-list .score {
+  line-height: 0.49333rem;
+  font-size: 0.32rem; }
+
+.singOn-list .date {
+  line-height: 0.49333rem;
+  font-size: 0.26667rem; }
+
+.singOn-list .coin {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/personalCenter-cion-g.png);
+  background-size: 0.58667rem 0.58667rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  margin: 0.10667rem 0 0.10667rem;
+  position: relative;
+  z-index: 2; }
+
+.singOn-list .signed .coin {
+  background-image: url(../images/personalCenter-cion-f.png);
+  background-size: 0.72rem 0.72rem; }
+
+.singOn-list .signed .score {
+  font-size: 0.34667rem; }
+
+.singOn-list .signed .date {
+  font-size: 0.29333rem; }
+
+.signOn-arrow {
+  background-image: url(../images/personalCenter-body-arrow.png);
+  background-repeat: no-repeat;
+  height: 1.8rem;
+  background-position: 3.8419rem 0.13333rem;
+  margin-bottom: 0.8rem;
+  background-size: auto 90%; }
+
+/*# sourceMappingURL=common.css.map */

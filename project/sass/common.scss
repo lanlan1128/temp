@@ -1,0 +1,209 @@
+body {
+	max-width: 10rem;
+	margin: 0 auto;
+	font-size: (28/75) + rem !important;
+}
+.page, body {
+    background-color: #f8f8f8;
+}
+.position-center {
+	position: relative;
+}
+.position-center-item {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* rest weiui*/
+.weui-cells__title {
+	margin-top: (29/75) + rem;
+    margin-bottom: (28/75) + rem;
+    padding-left: (30/75) + rem;
+    padding-right: (28/75) + rem;
+} 
+.weui-cell {
+	padding: (30/75) + rem;
+}
+
+
+/* signOnList page */
+.s-page .page__bd {
+	margin: (21/75) + rem 0;
+}
+.s-header-bar {
+	background: url(../images/signOnList-header-bg.png) no-repeat 
+              center / 100% auto;
+	padding-top: 46%;
+}
+.s-header-content {
+	color: #fff;
+	text-align: center;
+}
+.s-header-content span {
+	color: #fff;
+	font-size: (84/75) + rem;
+}
+.s-header-content p {
+	color: #fff;
+	font-size: (28/75) + rem;
+}
+.s-panel-title {
+	color: #000;
+	font-size: (28/75) + rem;
+}
+.s-page__bd .weui-media-box {
+	padding: 0;
+}
+.s-page__bd .number {
+	font-size: (30/75) + rem;
+	color:#0bb7cb;
+}
+.s-page__bd .title {
+	font-size: (30/75) + rem;
+}
+.s-page__bd .desc {
+	font-size: (24/75) + rem;
+}
+.s-page__bd .tip {
+	font-size: (28/75) + rem;
+	color:#666666;
+	text-align:center;
+	padding: (33/75) + rem;
+}
+
+
+/* personalCenter page */
+.p-header-bar {
+	font-size:(28/75) + rem;
+	color:#064e56;
+	vertical-align: middle;
+	text-align: center;
+	background: url(../images/personalCenter-header-bg.png) no-repeat center / auto 100%;
+}
+.p-header-info {
+	padding: (52/75) + rem 0 (54/75) + rem;
+}
+.p-header-info img {
+	border-radius: 50%;
+	width: (150/75) + rem;
+	height: (150/75) + rem;
+	margin-bottom: (30/75) + rem;
+}
+.p-header-bar .coin {
+	display: inline-block;
+	margin-right: (21/75) + rem;
+	width: (54/75) + rem;
+	vertical-align: middle;
+}
+.p-header-text {
+	background:#0bb7cb;
+	background: rgba(13,182,202,0.07);
+}
+.p-header-text .p-header-text-item {
+	color:#064e56;
+	padding: (26/75) + rem 0 (27/75) + rem;
+}
+.p-header-text .p-header-text-item {
+	position: relative;
+	line-height: (54/75) + rem;
+}
+.p-header-text .p-header-text-item p,
+.p-header-text .p-header-text-item span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.p-header-text .p-header-text-item:not(:nth-last-child(1)):before {
+	content: " ";
+    position: absolute;
+    right: 0;
+	top: 0;
+    bottom: 0;
+    color: #d9d9d9;
+    width: 1px;
+    border-right: 1px solid #d9d9d9;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+}
+
+.signOn-panel {
+	margin: (42/75) + rem 0 0;
+	height: (260/75) + rem;
+	background: url(../images/personalCenter-body-bg.png) no-repeat center / 100% auto;
+    color: #fff;
+    background-clip: padding;
+}
+.signOn-panel .title {
+	padding: (16/75) + rem (60/75) + rem;
+}
+.singOn-list {
+	position: relative;
+	padding: 0 (60/75) + rem;
+	line-height: 1;
+}
+.singOn-list:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	opacity:0.25;
+	border:2px solid #ffffff;
+	height:1px;
+	top: 50%;
+	z-index: 1;
+	-webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: scaleY(.3);
+    transform: scaleY(.3);
+	margin-top: (- 5 * 0.3) + px;
+}
+.signOn-pnel .item:nth-child(2) {
+	padding: 20px;
+	display: block;
+	margin: 20rem auto;
+}
+.singOn-list .score {
+	line-height: (37/75) + rem;
+	font-size: (24/75) + rem;
+}
+.singOn-list .date {
+	line-height: (37/75) + rem;
+	font-size: (20/75) + rem;
+}
+.singOn-list  .coin {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../images/personalCenter-cion-g.png);
+	background-size: (44/75) + rem (44/75) + rem;
+	width: (54/75) + rem;
+	height: (54/75) + rem;
+	margin: (8/75) + rem 0 (8/75) + rem;
+	position: relative;
+	z-index: 2;
+}
+.singOn-list .signed .coin {
+	background-image: url(../images/personalCenter-cion-f.png);
+	background-size: (54/75) + rem (54/75) + rem;
+}
+
+.singOn-list .signed .score {
+	font-size: (26/75) + rem;
+}
+
+.singOn-list .signed .date {
+	font-size: (22/75) + rem;
+}
+
+.signOn-arrow {
+	background-image: url(../images/personalCenter-body-arrow.png);
+	background-repeat: no-repeat;
+	height: (135/75) + rem;
+	background-position: (61/75 + ((620+54+44)/75/7 * 2) + 44/2/75) + rem (10/75) + rem;
+	margin-bottom: (60/75) + rem;
+	background-size: auto 90%;
+}
+

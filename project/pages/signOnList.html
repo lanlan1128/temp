@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+		<script src="../lib/lib-flexible-2.0/index.js"></script>
+		
+		<!-- css资源 -->
+		<link rel="stylesheet" href="../lib/weui/1.1.3/style/weui.min.css">
+		<link rel="stylesheet" href="../lib/jquery-weui/1.2.1/css/jquery-weui.min.css">
+		
+		<style> 
+			html{font-size: 75px}
+		</style>
+		<link rel="stylesheet" href="../css/common.css">
+	</head>
+	<body>
+		
+		<div class="page panel s-page">
+			<div class="page__hd">
+				<div class="s-header-bar position-center">
+					<div class="s-header-content position-center-item">
+						<span id="thisMonthCoins">222</span>
+						<p>我的健康币</p>
+					</div>
+				</div>
+			</div>
+			<div class="page__bd s-page__bd">
+				<div class="weui-panel">
+					<div class="weui-panel__bd">
+						<div class="weui-cells__title s-panel-title">本月获取：<span id="myCoins">333</span>金币</div>
+						<div class="weui-cells" id="coinHistory">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<div class="weui-media-box weui-media-box_text">
+										<h4 class="weui-media-box__title title">登陆签到</h4>
+										<p class="weui-media-box__desc desc">2017-09-09 12:12:12</p>
+									</div>
+								</div>
+								<div class="weui-cell__ft">
+									<span class="number">+50</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="weui-panel__ft">
+						<p class="tip">仅支持查看近90天的健康币</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 脚本文件 -->
+		<script src="../lib/jquery/1.11.0/jquery.min.js"></script>
+		<script src="../lib/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+		<script src="../lib/fastclick.js"></script>
+	</body>
+</html>
